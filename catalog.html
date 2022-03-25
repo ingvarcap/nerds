@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img src="https://via.placeholder.com/150x100" alt="Логотип"
+        /></a>
+        <ul>
+          <li><a href="index.html">cтудия</a></li>
+          <li><a href="blank.html">клиенты</a></li>
+          <li><a>магазин</a></li>
+          <li><a href="blank.html">контакты</a></li>
+        </ul>
+        <a href="blank.html">корзина</a>
+      </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Фильтрация товара</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h3>стоимость</h3>
+          <fieldset>
+            <legend>cтоимость:</legend>
+            <input
+              type="range"
+              id="priceslider"
+              name="priceslider"
+              min="0"
+              max="15000"
+              step="1"
+            />
+            <p>
+              <label>От <input type="text" name="price" value="0" /></label>
+              <label>До <input type="text" name="price" value="15000" /></label>
+            </p>
+          </fieldset>
+
+          <h3>Сетка</h3>
+          <fieldset>
+            <legend>сетка:</legend>
+            <p>
+              <input
+                type="radio"
+                name="adaptive"
+                value="adaptive-site"
+                id="grid1"
+                checked
+              />
+              <label for="grid1">Адаптивная</label>
+            </p>
+            <p>
+              <input type="radio" name="fixed" value="fixed-site" id="grid2" />
+              <label for="grid2">Фиксированная</label>
+            </p>
+            <p>
+              <input
+                type="radio"
+                name="responsive"
+                value="responsive-site"
+                id="grid3"
+              />
+              <label for="grid3">Резиновая</label>
+            </p>
+          </fieldset>
+          <h3>Особенности</h3>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <p>
+              <input type="checkbox" name="feature" id="feature1" cheked />
+              <label for="feature1">Слайдер</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature" id="feature2" />
+              <label for="feature2">Блок преимуществ</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature" id="feature3" cheked />
+              <label for="feature3">Новости</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature" id="feature4" />
+              <label for="feature4">Галерея</label>
+            </p>
+            <p>
+              <input type="checkbox" name="feature" id="feature5" />
+              <label for="feature5">Корзина</label>
+            </p>
+          </fieldset>
+          <button type="submit">показать</button>
+        </form>
+      </section>
+      <section>
+        <h2>Каталог</h2>
+        <div>
+          <span>сортировать</span>
+        </div>
+        <ul>
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по названию</a></li>
+        </ul>
+        <ul>
+          <li>
+            <img src="https://via.placeholder.com/150x100" alt="" />
+            <div>
+              <h3>седона</h3>
+              <p>Информационный сайт для туристов</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" alt="" />
+            <div>
+              <h3>Pink App</h3>
+              <p>Продуктовый лендингприложения для iOS и Android</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" alt="" />
+            <div>
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты.Для мужчин, да.</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" />
+            <div>
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" alt="" />
+            <div>
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/150x100" alt="" />
+            <div>
+              <h3>КВАСТ</h3>
+              <p>Промо-сайт производителякрафтового кваса</p>
+              <button>9 900 ₽</button>
+            </div>
+          </li>
+        </ul>
+        <div>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>следующая</button>
+        </div>
+      </section>
+      <section>
+        <h2>nёrd's design studio</h2>
+        <p>
+          наб. Реки Карповки,<br />
+          5 лит П, Санкт-Петербург<br />
+        </p>
+        <a href="tel:+78005558628">+7800555-86-28</a>
+        <a href="#">Напишите нам</a>
+      </section>
+    </main>
+    <footer>
+      <h2>Преимущества для подписчиков на наши социальные сети</h2>
+      <ul>
+        <li><a href="#">вконтакте</a></li>
+        <li><a href="#">фэйсбук</a></li>
+        <li><a href="#">инстаграм</a></li>
+      </ul>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+  </body>
+</html>
