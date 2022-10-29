@@ -7,6 +7,18 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
 
 html {
   line-height: 1.15; /* 1 */
@@ -174,7 +186,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +197,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 

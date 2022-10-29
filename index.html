@@ -17,7 +17,7 @@
 
 <body class="page-body">
   <header class="header">
-    <nav class="header__nav">
+    <nav class="header__nav container">
       <a class="header__logo-link"><img class="nav__logo-img" src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип сайта" /></a>
       <div class="header__menu">
         <ul class="header__menu-list">
@@ -37,39 +37,55 @@
       </div>
       <a class="header__menu-basket" href="blank.html">корзина</a>
     </nav>
-
-    <section class="header__slider slider">
-      <div class="slider__main">
+  </header>
+  <main class="main">
+    <section class="main__slider slider">
+      <div class="slider__main container">
         <h2 class="slider__header">Принципы нашей работы</h2>
         <ul class="slider__list">
-          <li class="slider__item">
-            <p class="slider__item-head">Долго, дорого, скрупулезно.</p>
-            <p class="slider__item-text">
-              Математически выверенный дизайн для вашего сайта или мобильного
-              приложения.
-            </p>
-            <a class="slider__link btn" href="#">узнать больше</a>
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <input type="radio" name="r" id="r3">
+          <li class="slider__item item__slider item__slider--s1">
+            <div class="item__slider-wrapper">
+              <p class="item__slider-head">Долго, дорого,<br> скрупулезно.</p>
+              <p class="item__slider-text">
+                Математически выверенный дизайн<br> для вашего сайта или мобильного
+                приложения.
+              </p>
+              <a class="item__slider-link btn" href="#">узнать больше</a>
+            </div>
+            <!--<img src="../img/slide1.png" width="760" height="431" alt="Слайдер 1" class="slider__item-img">-->
           </li>
-          <li class="slider__item">
-            <p class="slider__item-head">Любим математику как никто другой</p>
-            <p class="slider__item-text">
-              Никакого креатива, только математические формулы для расчета
-              идеальных пропорций
-            </p>
-            <a class="slider__link btn" href="#">узнать больше</a>
+          <li class="slider__item item__slider item__slider--s2">
+            <div class="item__slider-wrapper">
+              <p class="item__slider-head">Любим математику<br> как никто другой</p>
+              <p class="item__slider-text">
+                Никакого креатива, только математические формулы<br>. для расчета
+                идеальных пропорций
+              </p>
+              <a class="item__slider-link btn" href="#">узнать больше</a>
+            </div>
+            <!--<img src="../img/slide2.png" width="760" height="431" alt="Слайдер 2" class="slider__item-img">-->
           </li>
-          <li class="slider__item">
-            <p class="slider__item-head">Только ночь, только хардкор</p>
-            <p class="slider__item-text">
-              Работать днем, как все? Мы против этого. Ближе к полуночи работа
-              только начинается.
-            </p>
-            <a class="slider__link btn" href="#">узнать больше</a>
+          <li class="slider__item item__slider item__slider--s3">
+            <div class="item__slider__wrapper">
+              <p class="item__slider-head">Только ночь,<br> только хардкор</p>
+              <p class="item__slider-text">
+                Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа
+                только начинается.
+              </p>
+              <a class="item__slider-link btn" href="#">узнать больше</a>
+            </div>
+            <!--<img src="../img/slide3.png" width="760" height="431" alt="Слайдер 3" class="slider__item-img">-->
           </li>
         </ul>
       </div>
-      <ul class="slider__toggle-list">
-        <li class="slider__toggle-item">
+      <div class="slider__toggle container">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <!--<li class="slider__toggle-item">
           <button class="slider__toggle-btn"></button>
         </li>
         <li class="slider__toggle-item">
@@ -77,13 +93,11 @@
         </li>
         <li class="slider__toggle-item">
           <button class="slider__toggle-btn"></button>
-        </li>
-      </ul>
+        </li>-->
+      </div>
     </section>
-  </header>
-  <main class="main">
     <h1 class="main__header">Студия веб-разработки Nёrds</h1>
-    <section class="services">
+    <section class="services container">
       <h2 class="services__head">Наши услуги</h2>
       <ul class="services__list">
         <li class="services__item">
@@ -112,9 +126,9 @@
         </li>
       </ul>
     </section>
-    <section class="details">
-      <h2 class="details__header">О нас</h2>
+    <section class="details container">
       <div class="details__promo-wrapper">
+        <h2 class="details__header">О нас</h2>
         <p class="details__promo-head">
           Мы — маленькая, но гордая дизайн-студия из Краснодара.
         </p>
@@ -123,7 +137,7 @@
           расчет превыше креатива. Работаем не покладая рук, как роботы.
         </p>
         <p class="details__order-head">Выполняем заказы на разработку:</p>
-        <ul class="details__order-list list-order">
+        <ul class="details__order-list list__order">
           <li class="list__order-item">
             <p>Веб-сайтов любой сложности</p>
           </li>
@@ -156,7 +170,7 @@
         </ul>
       </div>
     </section>
-    <section class="clients">
+    <section class="clients container">
       <h2 class="clients__header">Клиенты</h2>
       <ul class="clients__list">
         <li class="clients__item">
@@ -169,22 +183,28 @@
         <li class="clients__item">
           <a class="clients__link" href="#"><img class="clients__img" src="img/partners/logo-pink.png" width="185" height="52" alt="Логотип сайта Pink" /></a>
         </li>
-        <li>
+        <li class="clients__item">
           <a href="#"><img class="clients__img" src="img/partners/logo-mishka.png" width="173" height="84" alt="Логотип сайта Mishka" /></a>
         </li>
       </ul>
     </section>
     <section class="contacts">
-      <h2 class="contacts__header">nёrd's design studio</h2>
-      <p class="contacts__map">
-        наб. Реки Карповки,<br />
-        5 лит П, Санкт-Петербург<br />
-      </p>
-      <a class="contacts__tel" href="tel:+78005558628">+7800555-86-28</a>
-      <a href="#" class="contacts__btn btn">Напишите нам</a>
+      <div class="contacts__inner container">
+        <div class="contacts__wrapper container">
+          <!--<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0b9d07478d319bce76c77a1f73ebad2772a4d258d74a0830f06e4fd5ca7d8ef&amp;source=constructor" width="1280" height="416"
+          frameborder="0"></iframe>-->
+          <h2 class="contacts__header">nёrd's design studio</h2>
+          <p class="contacts__map">
+            наб. Реки Карповки,<br />
+            5 лит П, Санкт-Петербург<br />
+          </p>
+          <a class="contacts__tel" href="tel:+78005558628">+7800555-86-28</a>
+          <a href="#" class="contacts__btn btn">Напишите нам</a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer container">
     <h2 class="footer__header">
       Преимущества для подписчиков на наши социальные сети
     </h2>
@@ -207,24 +227,28 @@
     </div>
   </footer>
   <section class="modal">
-    <h2 class="modal__header">Форма обратной связи</h2>
-    <p class="modal__message">Напишите нам</p>
-    <button class="modal__btn-close" type="button">X</button>
-    <form class="modal__form-feedback form-feedback" action="" method="post">
-      <p class="form-feedback__item">
-        <label for="name">Ваше имя:</label>
-        <input type="text" class="form-feedback__name" id="name" name="name" placeholder="Имя Фамилия" />
-      </p>
-      <p class="form-feedback__item">
-        <label for="email">Ваш email:</label>
-        <input type="email" class="form-feedback__email" id="email" name="email" placeholder="email@example.com " />
-      </p>
-      <p class="form-feedback__item">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="message" cols="50" rows="10" class="form-feedback__message" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="btn form__submit" type="submit">Отправить</button>
-    </form>
+    <div class="modal__wrapper">
+      <h2 class="modal__header">Форма обратной связи</h2>
+      <div class="modal__head">
+        <p class="modal__message">Напишите нам</p>
+        <button class="modal__btn-close" type="button"></button>
+      </div>
+      <form class="modal__form-feedback form-feedback" action="" method="post">
+        <p class="form-feedback__item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" class="form-feedback__name" id="name" name="name" placeholder="Имя Фамилия" />
+        </p>
+        <p class="form-feedback__item">
+          <label for="email">Ваш email:</label>
+          <input type="email" class="form-feedback__email" id="email" name="email" placeholder="email@example.com " />
+        </p>
+        <p class="form-feedback__item">
+          <label for="message">Текст письма:</label>
+          <textarea name="message" id="message" cols="93" rows="10" class="form-feedback__message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="btn form__submit" type="submit">Отправить</button>
+      </form>
+    </div>
   </section>
 </body>
 
